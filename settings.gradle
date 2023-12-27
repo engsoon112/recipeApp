@@ -1,2 +1,2 @@
-rootProject.name = "EcommBase"
+rootProject.name = "RecipeApp"
 include ':app'

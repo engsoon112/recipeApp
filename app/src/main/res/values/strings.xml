@@ -16,7 +16,6 @@
     <string name="sentence_invalid_required">Required</string>
     <string name="sentence_invalid">Invalid</string>
     <string name="text_Name">Name</string>
-    <string name="text_NRIC_Number">NRIC Number</string>
     <string name="text_Mobile_Number">Mobile Number</string>
     <string name="text_have_account_login_now"><u>Have Account Login Now</u></string>
     <string name="text_OK">OK</string>
@@ -44,7 +43,7 @@
     <string name="appointment_enquiry">Appointment Enquiry</string>
     <string name="text_full_name">Full Name</string>
     <string name="text_emergency_name">Emergency Name</string>
-    <string name="text_emergency_contact">Emergency Contact</string>name="text_occupation">Occupation</string>
+    <string name="text_emergency_contact">Emergency Contact</string>
     <string name="text_gender">Gender</string>
     <string name="text_race">Race</string>
 
