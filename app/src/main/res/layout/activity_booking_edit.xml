@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".haircutMemberMasuk.MemberMainActivity">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="recipeBR"
+            type="com.base.ecomm.recipeMain.model.RecipeBR" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+        <LinearLayout
+            android:id="@+id/ly_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:fitsSystemWindows="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:fitsSystemWindows="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/ly_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginVertical="15dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_back_white" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/iv_back"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="Booking Details"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="Save"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/ly_nsv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.carousel.MaskableFrameLayout
+                            android:id="@+id/fragment_content_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginBottom="0dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="start"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/opensans_semibold"
+                                    android:text="Recipe Details"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp" />
+
+                                <io.getstream.avatarview.AvatarView
+                                    android:id="@+id/av_profile"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    app:avatarViewBorderColor="@color/colorEEE0C3"
+                                    app:avatarViewBorderWidth="3dp"
+                                    app:avatarViewIndicatorBorderColor="@color/color_thin_yellow"
+                                    app:avatarViewIndicatorBorderSizeCriteria="10"
+                                    app:avatarViewIndicatorEnabled="false"
+                                    app:avatarViewIndicatorSizeCriteria="9"
+                                    app:avatarViewInitialsTextStyle="bold"
+                                    app:avatarViewShape="circle"
+                                    android:visibility="gone"
+                                    tools:src="@mipmap/ic_launcher_round" />
+
+                                <LinearLayout style="@style/ly_form">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        style="@style/tv_.form_title"
+                                        android:text="Recipe Type" />
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tv_recipe_type"
+                                        style="@style/tv_.editText"
+                                        android:gravity="end"
+                                        android:layout_marginLeft="10dp"
+                                        tools:text="pasta" />
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/ly_form">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        style="@style/tv_.form_title"
+                                        android:text="Meal Type" />
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tv_meal_type"
+                                        style="@style/tv_.editText"
+                                        android:gravity="end"
+                                        android:layout_marginLeft="10dp"
+                                        tools:text="lunch" />
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/ly_form"
+                                    android:visibility="gone">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        style="@style/tv_.form_title"
+                                        android:text="Booking Time" />
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tv_booking_time"
+                                        style="@style/tv_.editText"
+                                        android:gravity="end"
+                                        android:layout_marginLeft="10dp"
+                                        tools:text="4:00am-7:00pm" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </com.google.android.material.carousel.MaskableFrameLayout>
+
+                    </RelativeLayout>
+                </androidx.core.widget.NestedScrollView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_remove"
+                    style="@style/tv_.button_blue"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="20dp"
+                    app:backgroundTint="@color/colorRed"
+                    android:textColor="@color/colorWhite"
+                    android:text="Remove" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

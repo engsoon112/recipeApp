@@ -1,0 +1,182 @@
+<resources>
+
+    <!-- TextView -->
+    <style name="tv_">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Layout -->
+
+    <!-- Button -->
+    <style name="tv_.button">
+        <item name="android:layout_width">290dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:background">@drawable/rounded_blue_button</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Popup Animation -->
+    <style name="popup_window_fade">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="ly_title_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+    </style>
+
+    <style name="ly_title_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tv_.desc">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="ly_body">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+    </style>
+
+    <style name="ly_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="tv_.button_blue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_button_theme</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#596863</item>
+    </style>
+
+    <style name="tv_.button_blue2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_button_theme2</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingHorizontal">40dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FAF9F7</item>
+    </style>
+
+    <style name="tv_.error">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/sentence_invalid_required</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorThemePeach</item>
+    </style>
+
+    <!-- Edit Text -->
+    <style name="tv_.editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">start</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorThemeGreyLight</item>
+    </style>
+
+    <style name="tv_.title">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/eb_garamond_bold</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tv_.title2">
+        <item name="android:textColor">@color/colorBlack_393939</item>
+        <item name="android:fontFamily">@font/oranienbaum_regular</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="tv_.title3">
+        <item name="android:textColor">@color/colorBlack_393939</item>
+        <item name="android:fontFamily">@font/montserrat_variablefont_wght</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="tv_.header_button">
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/eb_garamond_semibold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="tv_.desc_white">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ly_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_marginTop">2.5dp</item>
+        <item name="android:layout_marginBottom">2.5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tv_.form_title">
+        <item name="android:layout_weight">0</item>
+        <item name="android:textColor">@color/color_theme_yellow</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tv_.form_desc">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColor">@color/color_theme_yellow</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

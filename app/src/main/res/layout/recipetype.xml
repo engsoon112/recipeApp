@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="recipeBR"
+            type="com.base.ecomm.recipeMain.model.RecipeBR" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+        <LinearLayout
+            android:id="@+id/ly_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:fitsSystemWindows="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:fitsSystemWindows="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ly_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginVertical="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_back_white" />
+
+                    <TextView
+                        android:id="@+id/tv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="Home"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/fragment_content_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="0dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/tv_.form_title"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/text_recipe_types"/>
+
+                            <com.skydoves.powerspinner.PowerSpinnerView
+                                android:id="@+id/btn_recipe_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_bg_button"
+                                tools:hint="Spaghetti"
+                                android:padding="10dp"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="14.5sp"
+                                android:paddingHorizontal="10dp"
+                                app:spinner_arrow_gravity="end"
+                                app:spinner_arrow_padding="8dp"
+                                app:spinner_arrow_tint="@color/colorWhite"
+                                app:spinner_divider_color="@color/colorWhite"
+                                app:spinner_divider_show="true"
+                                app:spinner_divider_size="0.4dp"
+                                app:spinner_item_array="@array/recipetype"
+                                app:spinner_item_height="46dp"
+                                app:spinner_popup_animation="dropdown"
+                                app:spinner_popup_background="@color/colorBackground"
+                                app:spinner_popup_elevation="14dp"
+                                android:text="@={recipeBR.recipeType}" />
+
+                            <TextView
+                                style="@style/tv_.error"
+                                android:text="@string/text_required"
+                                android:visibility="@{recipeBR.recipeTypeValid ? View.VISIBLE : View.GONE}" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/tv_.form_title"
+                                android:layout_marginVertical="10dp"
+                                android:text="Meal Types"/>
+
+                            <com.skydoves.powerspinner.PowerSpinnerView
+                                android:id="@+id/btn_meal_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_bg_button"
+                                tools:hint="BreakFast"
+                                android:padding="10dp"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="14.5sp"
+                                android:paddingHorizontal="10dp"
+                                app:spinner_arrow_gravity="end"
+                                app:spinner_arrow_padding="8dp"
+                                app:spinner_arrow_tint="@color/colorWhite"
+                                app:spinner_divider_color="@color/colorWhite"
+                                app:spinner_divider_show="true"
+                                app:spinner_divider_size="0.4dp"
+                                app:spinner_item_array="@array/mealtype"
+                                app:spinner_item_height="46dp"
+                                app:spinner_popup_animation="dropdown"
+                                app:spinner_popup_background="@color/colorBackground"
+                                app:spinner_popup_elevation="14dp"
+                                android:text="@={recipeBR.mealType}" />
+
+                            <TextView
+                                style="@style/tv_.error"
+                                android:text="@string/text_required"
+                                android:visibility="@{recipeBR.mealTypeValid ? View.VISIBLE : View.GONE}" />
+
+                            <TextView
+                                android:id="@+id/btn_add"
+                                style="@style/tv_.button_blue"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/text_add_recipe" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

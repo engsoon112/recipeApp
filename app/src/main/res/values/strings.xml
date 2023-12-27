@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name" translatable="false">RecipeApp</string>
+
+    <string name="sentence_exit_double_back">Tap again to exit</string>
+    <string name="sentence_Something_went_wrong">Looks like something went wrong.\nWe’re working on getting it fixed.</string>
+    <string name="sentence_network_unstable">Network unstable, connection lost.\nPlease reconnect your internet and try again.</string>
+    <string name="text_Version">Version</string>
+    <string name="sentence_device_information_not_detected">Sorry, your device information is not detected.</string>
+    <string name="text_Opps_I_m_Sorry">Sistem kami sedang sibuk, sila cuba semula kemudian</string>
+    <string name="text_Try_again">Retry again</string>
+    <string name="text_Close">Cancel Order</string>
+    <string name="sentence_maintenance">Our system is updating now. Please try again later.</string>
+    <string name="text_Okay">Okay</string>
+    <string name="text_Submit">Submit</string>
+    <string name="sentence_term">By registering, you are agreeing to our \n <u><font color="#CEB341">Terms of Service</font></u></string>
+    <string name="sentence_invalid_required">Required</string>
+    <string name="sentence_invalid">Invalid</string>
+    <string name="text_Name">Name</string>
+    <string name="text_NRIC_Number">NRIC Number</string>
+    <string name="text_Mobile_Number">Mobile Number</string>
+    <string name="text_have_account_login_now"><u>Have Account Login Now</u></string>
+    <string name="text_OK">OK</string>
+    <string name="sentence_app_no_available_country">This app is not available in your country or region.</string>
+    <string name="text_Congratulations">Congratulations</string>
+    <string name="text_Done">Done</string>
+    <string name="text_verify_your_phone_number">Verify your Phone Number</string>
+    <string name="text_Country_Region">Country/Region</string>
+    <string name="text_Search_Country">Search Country</string>
+    <string name="text_s">s</string>
+    <string name="text_kode_digit">A 6-digit code has been sent to </string>
+    <string name="text_Confirm">Confirm</string>
+    <string name="text_Resend_OTP">Resend OTP</string>
+    <string name="text_Login">Log In</string>
+    <string name="sentence_version_update">A new version of the application is available.</string>
+    <string name="text_Update">Update</string>
+    <string name="text_No_thanks">No, thanks</string>
+    <string name="text_hi">Hi</string>
+    <string name="text_Sign_up_here">Sign up here</string>
+    <string name="text_Don_t_have_an_account_">Don’t have an account?</string>
+    <string name="text_confirm_password">Confirm Password</string>
+    <string name="text_password">Password</string>
+    <string name="text_passwords_do_not_match">Passwords do not match</string>
+    <string name="text_welcome">Welcome,</string>
+    <string name="appointment_enquiry">Appointment Enquiry</string>
+    <string name="text_full_name">Full Name</string>
+    <string name="text_emergency_name">Emergency Name</string>
+    <string name="text_emergency_contact">Emergency Contact</string>name="text_occupation">Occupation</string>
+    <string name="text_gender">Gender</string>
+    <string name="text_race">Race</string>
+
+    <string name="text_recipe_list">Recipe List</string>
+    <string name="text_add_your_own_recipe">Add Your Own Recipe?</string>
+    <string name="text_recipe_types">Recipe Types</string>
+    <string name="text_add_recipe">Add Recipe</string>
+    <string name="text_required">Required</string>
+
+</resources>

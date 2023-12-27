@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".country.CountryNotAvailableActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ly_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:fitsSystemWindows="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_splash"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_country" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/tv_"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:visibility="invisible"
+                tools:text="veniam, mi." />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                style="@style/tv_"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/sentence_app_no_available_country"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_ok"
+                style="@style/tv_.button_blue"
+                android:layout_marginTop="30dp"
+                android:text="@string/text_OK" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

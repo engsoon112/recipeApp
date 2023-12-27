@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".features.login.LoginActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+        <LinearLayout
+            android:id="@+id/ly_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:fitsSystemWindows="false"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/ly_nsv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/ly_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fitsSystemWindows="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_.title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="10dp"
+                            android:text="@string/text_Login" />
+
+                        <com.skydoves.powerspinner.PowerSpinnerView
+                            android:id="@+id/btn_language"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/rounded_bg_button"
+                            android:padding="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="14.5sp"
+                            app:spinner_arrow_gravity="end"
+                            app:spinner_arrow_padding="8dp"
+                            app:spinner_arrow_tint="@color/colorWhite"
+                            app:spinner_divider_color="@color/colorWhite"
+                            app:spinner_divider_show="true"
+                            app:spinner_divider_size="0.4dp"
+                            app:spinner_item_array="@array/language"
+                            app:spinner_item_height="46dp"
+                            app:spinner_popup_animation="dropdown"
+                            app:spinner_popup_background="@color/colorBackground"
+                            app:spinner_popup_elevation="14dp"
+                            tools:hint="En" />
+
+                    </RelativeLayout>
+
+                    <!--Mobile Number-->
+                    <TextView
+                        style="@style/tv_"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/text_Mobile_Number"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edittext"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/btn_country"
+                            style="@style/tv_"
+                            android:layout_marginEnd="5dp"
+                            android:clickable="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp"
+                            tools:text="+60" />
+<!--                        app:drawableEndCompat="@drawable/ic_arrow_drop_down"-->
+                        <EditText
+                            android:id="@+id/et_mobile_number"
+                            style="@style/tv_.editText"
+                            android:hint="@string/text_Mobile_Number"
+                            android:inputType="phone"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/tv_.error"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sentence_invalid" />
+
+                    <!--Password-->
+                    <TextView
+                        style="@style/tv_"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="Password"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edittext"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            style="@style/tv_.editText"
+                            android:hint=""
+                            android:inputType="textPassword"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/tv_.error"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sentence_invalid" />
+
+                    <TextView
+                        android:id="@+id/btn_register"
+                        style="@style/tv_.button_blue"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/text_Login" />
+
+                    <TextView
+                        style="@style/tv_"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/text_Don_t_have_an_account_"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/btn_sign_up"
+                        style="@style/tv_"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="@string/text_Sign_up_here"
+                        android:textColor="@color/color_theme_yellow"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

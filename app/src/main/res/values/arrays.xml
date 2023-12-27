@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language">
+        <item>English</item>
+        <item>Malay</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="recipetype">
+        <item>Pasta</item>
+        <item>Salad</item>
+        <item>Dessert</item>
+    </string-array>
+
+    <string-array name="mealtype">
+        <item>BreakFast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+</resources>
+
+
+
